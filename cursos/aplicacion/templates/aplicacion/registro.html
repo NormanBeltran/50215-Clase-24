@@ -1,0 +1,20 @@
+{% extends "aplicacion/index.html" %}
+
+
+{% block titulo %}
+<h1 class="mb-5">Registro de Usuario</h1>
+{% endblock titulo %}
+
+
+{% block contenido %}
+    
+<form action="" method="post">
+    {% csrf_token %}
+    <!-- Comentario  -->
+    <table>
+        {{ form.as_table }}
+    </table>
+    <input type="submit" value="Enviar">
+</form>
+
+{% endblock contenido %}
